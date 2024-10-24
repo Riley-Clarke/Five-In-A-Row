@@ -1,0 +1,26 @@
+   1. compile the server program:
+        gcc -lpthread -o server server-thread-2021.c server-thread-main-2021.c
+   2. compile the cliient program:
+        gcc -o client client-thread-2021.c client-thread-main-2021.c
+
+TO Run The Server and Client:
+   FOR STUDNETS:
+     If you want to try this demo, you MUST use the port # assigned
+     to you by your instructor. Since each http port can be associated
+     to only one process (or one server), if another student tries to
+     run the server with the default port, it will be rejected.
+
+   1. run the server program on freebsd1.cs.scranton.edu: 
+        ./server PORT#
+      -- PORT# should be socket port # assigned to your team
+
+   2. run the client on freebsd2.cs.scranton.edu: 
+        ./client freebsd1.cs.scranton.edu PORT# socket.html
+      -- PORT# should be socket port # assigned to your team
+
+      Enter 1 to display the socket.html file
+      Enter 2 to send "Hello World" to the Server, which should display it. 
+      Enter 0 to terminate the client. 
+
+   3. To terminate the server
+      Press CTRL + C
